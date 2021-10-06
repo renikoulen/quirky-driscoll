@@ -1,0 +1,33 @@
+body {
+  margin: 25px;
+}
+
+h1 {
+  color: blue;
+}
+
+ul {
+  text-align: left;
+  list-style: none;
+}
+li {
+  text-align: left;
+}
+.temperature {
+  font-size: 64px;
+  line-height: 1rem;
+}
+
+.units {
+  position: relative;
+  top: -34px;
+}
+
+.card {
+  line-height: 50px;
+}
+
+#generalInfo {
+  display: block;
+  margin: 0 auto;
+}

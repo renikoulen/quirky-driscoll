@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/10dd36b1d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="city-search">
+        <div class="row">
+          <div class="col-6">
+            <input
+              id="city-input"
+              type="search"
+              autofocus="on"
+              autocomplete="off"
+              placeholder="Type a city..."
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              id="search-submit"
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              id="current-submit"
+              type="submit"
+              value="Current"
+              class="form-control btn btn-success"
+            />
+          </div>
+        </div>
+      </form>
+      <h1 id="city">Oslo</h1>
+
+      <div id="generalInfo">
+        <ul>
+          <li id="date">Monday 13:29</li>
+          <li id="weatherdesc">Partly Cloudy</li>
+        </ul>
+      </div>
+
+      
+          <div class="col-6">
+            <div class="float-left">
+              <span class="temperature" id="temperature">19</span>
+              <span class="units">
+                <a id="celsius-link" href="#">°C</a>
+              </span>
+            </div>
+            <div class="col-6">
+              <ul class="weather-details" id="weather-details">
+                <li id="humidity">
+                  Humidity: 77%
+                </li>
+                <li id="windSpeed">
+                  Wind: 8 km/h
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>5 Day Forecast</h2>
+
+      <div class="row g-1">
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">TH</h5>
+              <div>
+                <i class="fas fa-cloud-rain"></i>
+              </div>
+              <p class="card-text">15/20° C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">FR</h5>
+              <div>
+                <i class="fas fa-cloud"></i>
+              </div>
+              <p class="card-text">17/25° C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SA</h5>
+              <div>
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </div>
+              <p class="card-text">14/18° C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">SU</h5>
+              <div>
+                <i class="fas fa-sun"></i>
+              </div>
+              <p class="card-text">20/27° C</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">MO</h5>
+              <div>
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <p class="card-text">18/23° C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/weatherapp.js"></script>
+  </body>
+</html>
